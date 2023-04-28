@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// @@@  IMPORTING COMPONENTS  @@@  
+import MainNavbar from './components/Navbar/mainNavbar/MainNavbar';
+import WritingNavbar from './components/Navbar/writingNavbar/WritingNavbar/WritingNavbar';
+import LoginPageNavbar from './components/Navbar/loginPageNavbar/LoginPageNavbar';
+import BlogPostCard from './components/BlogPost/blogPostCard/BlogPostCard';
+import TagSlider from './components/tagSlider/TagSlider';
+import BlogPostOwner from './components/BlogPost/blogPostOwner/BlogPostOwner';
+import Profile from './components/profile/Profile';
+import TipTap from './components/writing/Tiptap';
+import Followers from './components/followers/Followers';
+import Following from './components/following/Following';
+import LatestPosts from './components/latestPosts/LatestPosts';
 
-function App() {
+// @@@  IMPORTING PAGES  @@@ 
+import MainPage from '../src/pages/mainPage/MainPage';
+import WritingPage from './pages/writingPage/WritingPage';
+import ProfilePage from './pages/profilePage/ProfilePage';
+import RecommendTopics from './components/recommentTopics/RecommendTopics';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* @@@........ NAVBAR ............@@@ */}
+
+      {/* <MainNavbar/> */}
+      {/* <WritingNavbar/> */}
+      {/* <LoginPageNavbar/> Çook eksikler var  */}
+
+      {/* @@@........ BLOG POST ............@@@ */}
+
+      {/* <BlogPostCard/> */}
+      {/* <BlogPostOwner/> */}
+
+      {/* @@@........ OTHER COMPONENTS ............@@@ */}
+      {/* <Profile/> */}
+      {/* <TipTap/> */}
+      {/* <TagSlider/> */}
+      {/* <Followers/> */}
+      {/* <Following/> */}
+      {/* <LatestPosts/> */}
+      {/* <RecommendTopics/> */}
+
+      {/* @@@........ PAGES ............@@@ */}
+      <MainPage/>
+      {/* <WritingPage/> */}
+      {/* <ProfilePage/> */}
+      
+
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
