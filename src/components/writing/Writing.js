@@ -225,6 +225,7 @@ if (!editor) {
 const TipTap = ({setDesc}) => {
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
+    const my_content_props = content;
   
     const titleEditor = useEditor({
       extensions: [

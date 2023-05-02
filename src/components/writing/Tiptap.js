@@ -3,11 +3,13 @@ import parser from "html-react-parser"
 import Writing from './Writing';
 import './Writing.css';
 
-const TipTap = () => {
-  const [desc, setDesc] = useState("");
+const TipTap = ({ onDescChange }) => {
+  const handleDescChange = (newDesc) => {
+    onDescChange(newDesc);
+  }
   return (
     <div>
-      <Writing setDesc={setDesc}/>
+      <Writing setDesc={handleDescChange}/>
       {/* <div className='ProseMirror'>
         {parser(desc)}
       </div> */}

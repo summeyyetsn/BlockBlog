@@ -3,8 +3,20 @@ import styles from './WritingNavbar.module.css';
 import {SlArrowDown} from 'react-icons/sl';
 import {TbDots} from 'react-icons/tb';
 
-const WritingNavbar = () => {
-  
+const WritingNavbar = (props) => {
+  const { desc } = props;
+  const downloadTxtFile = () => {
+    const element = document.createElement('a');
+    const file = new Blob([desc], { type: 'text/plain' });
+    element.href = URL.createObjectURL(file);
+    element.download = 'my-text-file.txt';
+    document.body.appendChild(element);
+    element.click();
+  };
+
+  const handleSave = () => {
+    console.log(desc); // desc değişkenine burada erişebilirsiniz
+  }
    return (
     <div>
       <div className={styles["header-div-writing-page"]}>
@@ -14,7 +26,7 @@ const WritingNavbar = () => {
         
 
             <div className={styles["header-right-writing-page"]}>
-              <span className={styles['publish-button-writing-page']}>Publish</span>
+              <span onClick={downloadTxtFile} className={styles['publish-button-writing-page']}>Publish</span>
               <div className={styles["dib"]}>
                 <div className={styles['three-dot-writing-page']}>
                   <TbDots/>

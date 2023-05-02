@@ -17,6 +17,7 @@ import MainPage from '../src/pages/mainPage/MainPage';
 import WritingPage from './pages/writingPage/WritingPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
 import RecommendTopics from './components/recommentTopics/RecommendTopics';
+import BlogPostMain from './components/blogPostMain/BlogPostMain';
 
 const App = () => {
   return (
@@ -40,9 +41,10 @@ const App = () => {
       {/* <Following/> */}
       {/* <LatestPosts/> */}
       {/* <RecommendTopics/> */}
+      <BlogPostMain/>
 
       {/* @@@........ PAGES ............@@@ */}
-      <MainPage/>
+      {/* <MainPage/> */}
       {/* <WritingPage/> */}
       {/* <ProfilePage/> */}
       

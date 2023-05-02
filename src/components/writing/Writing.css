@@ -71,6 +71,7 @@
   .writing-right-buttons-div{
     /* margin-left:2%; */
   }
+  
   .editor-container{
     /* border:1px solid red; */
     margin-top:56px;
@@ -93,6 +94,7 @@
   .editor-container::-webkit-scrollbar-thumb:hover {
     background-color: #292929;
   }
+  
   .title-content-container{
     /* border:1px solid green; */
     width: 56%;
@@ -106,6 +108,7 @@
     padding: 20px 40px ;
     margin: 0px auto;
   }
+  .ProseMirror,
   .writing-content-container{
     /* border:1px solid brown ; */
     width: 56%;
