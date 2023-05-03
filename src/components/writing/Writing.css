@@ -75,12 +75,13 @@
   .editor-container{
     /* border:1px solid red; */
     margin-top:56px;
-    width: 99%;
+    width: 80%;
     height:520px;
     display: inline-block;
     overflow-y: auto;
     border-left:1px solid #ececec;
     border-right:1px solid #ececec;
+    
   }
   .editor-container::-webkit-scrollbar {
     background-color: #F5F5F5;
@@ -97,7 +98,7 @@
   
   .title-content-container{
     /* border:1px solid green; */
-    width: 56%;
+    width: 80%;
     font-size:30px;
     line-height: 40px;
     text-transform:capitalize;
@@ -105,19 +106,19 @@
     height: auto;
     overflow-wrap: break-word;
     white-space: pre-wrap;
-    padding: 20px 40px ;
+    padding: 20px 0px ;
     margin: 0px auto;
   }
   .ProseMirror,
   .writing-content-container{
     /* border:1px solid brown ; */
-    width: 56%;
+    width: 80%;
     height: auto;
     font-size: 21px;
     line-height: 33px;
     font-family: 'Poltawski Nowy', serif;
     color: #292727;
-    padding: 20px 40px ;
+    padding: 10px 0px ;
     margin: 0px auto;
     overflow-wrap: break-word;
     white-space: pre-wrap;

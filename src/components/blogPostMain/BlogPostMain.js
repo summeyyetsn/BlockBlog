@@ -14,7 +14,7 @@ const BlogPostMain = () => {
   return (
     <div>
         <input type="file" onChange={handleFileUpload} />
-        <div className="ProseMirror" dangerouslySetInnerHTML={{ __html: text }} />
+        <div className="ProseMirror blog-post-content-container" dangerouslySetInnerHTML={{ __html: text }} />
     </div>
   )
 }
